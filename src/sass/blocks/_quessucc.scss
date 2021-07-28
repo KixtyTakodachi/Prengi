@@ -1,0 +1,47 @@
+.quessucc{
+    padding: 70px 0 81px 0;
+    &__questions{
+        display: grid;
+        grid-template:  255px / repeat(3, 360px);
+        justify-content: center;
+        column-gap: 31px;
+        &__item{
+            background: url(../icons/question_mark.png) center center/cover no-repeat;
+            border: 1px solid #ececec;
+            border-radius: 4px;
+            text-align: center;
+        }
+        &__text{
+            color: #393939;
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+    &__pointer{
+        display: block;
+        margin: 50px auto 33px auto;
+    }
+    &__title{
+        text-align: center;
+        color: #393939;
+        font-size: 48px;
+        font-weight: 700;
+    }
+    &__success{
+        display: grid;
+        grid-template:  255px / repeat(3, 360px);
+        justify-content: center;
+        column-gap: 31px;
+        &__item{
+            background: url(../icons/success_mark.png) center center/cover no-repeat;
+            border: 1px solid #ececec;
+            border-radius: 4px;
+            text-align: center;
+        }
+        &__text{
+            color: #393939;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}

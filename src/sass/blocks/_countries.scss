@@ -1,0 +1,24 @@
+.countries{
+    padding: 19px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    &__item{
+        display: grid;
+        grid-template: 21px 29px / 28px auto;
+        column-gap: 11px;
+    }
+    &__contacts{
+        grid-column: 2 / 3;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    &__title{
+        color: #242424;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+    }
+}
