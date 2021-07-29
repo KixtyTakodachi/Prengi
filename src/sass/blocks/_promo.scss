@@ -21,6 +21,7 @@
         &__link{
             color: #fff;
             text-decoration: none;
+            transition: 0.3s all;
             &:hover{
                 color: $main_color;
                 text-decoration: underline;
@@ -48,14 +49,6 @@
         margin-top: 39px;
         width: 240px;
         height: 60px;
-        background-color: $main_color;
-        border: none;
-        box-shadow: 0 0 7px rgba(0, 0, 0, 0.07);
-        border-radius: 4px;
-        font-size: 16px;
-        font-weight: 700;
-        color: #fff;
-        text-transform: uppercase;
     }
     &__info{
         position: absolute;
