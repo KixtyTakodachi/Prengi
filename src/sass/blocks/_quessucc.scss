@@ -7,7 +7,7 @@
         justify-content: center;
         gap: 31px;
         &__item{
-            background: url(../icons/question_mark.png) center center/cover no-repeat;
+            background: url(../icons/question_mark.png) right 0% bottom 0%/cover no-repeat;
             border: 1px solid #ececec;
             border-radius: 4px;
             text-align: center;
@@ -36,7 +36,7 @@
         justify-content: center;
         gap: 31px;
         &__item{
-            background: url(../icons/success_mark.png) center center/cover no-repeat;
+            background: url(../icons/success_mark.png) right 0% bottom 0%/cover no-repeat;
             border: 1px solid #ececec;
             border-radius: 4px;
             text-align: center;
