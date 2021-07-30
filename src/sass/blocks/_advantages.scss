@@ -3,7 +3,7 @@
     &__wrapper{
         margin-top: 44px;
         display: grid;
-        grid-template: repeat(3, 355px) / repeat(2, 570px);
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
         grid-auto-rows: minmax(355px, auto);
     }
     &__item{

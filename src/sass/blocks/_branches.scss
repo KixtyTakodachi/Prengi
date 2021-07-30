@@ -74,4 +74,9 @@
             } 
         }
     }
+    &__label{
+        color: $main_color;
+        display: none;
+        text-decoration: underline;
+    }
 }

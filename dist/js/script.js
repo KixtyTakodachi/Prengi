@@ -30,17 +30,38 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="icons/arr_right2.png"></button>',
         customPaging : function(slider, i) {
             var title = $(slider.$slides[i]).data('title');
-            /* var onetitle = $('.slick-active').data('title');
-            var theDiv = document.getElementById("branches__label");
-            theDiv.innerHTML += onetitle; */
-            return '<a class="branches__carousel__item"> '+title+' </a>' ;
-        }
+            return '<a class="branches__carousel__item"> '+title+' </a>';
+        },
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
     });
     window.addEventListener('DOMContentLoaded', () => {
         const menu = document.querySelector('.menu__list'),
         menuItem = document.querySelectorAll('.menu__item'),
-        hamburger = document.querySelector('.hamburger');
+        hamburger = document.querySelector('.hamburger'),
+        footerTitle = document.querySelector('#modules'),
+        footerList = document.querySelector('#modules__list');
+        footerTitle2 = document.querySelector('#branches'),
+        footerList2 = document.querySelector('#branches__list');
+        footerTitle3 = document.querySelector('#about'),
+        footerList3 = document.querySelector('#about__list');
     
+        footerTitle.addEventListener('click', () =>{
+            footerList.classList.toggle('footer__list__active');
+        });
+        footerTitle2.addEventListener('click', () =>{
+            footerList2.classList.toggle('footer__list__active');
+        });
+        footerTitle3.addEventListener('click', () =>{
+            footerList3.classList.toggle('footer__list__active');
+        });
+
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
@@ -53,5 +74,8 @@ $(document).ready(function(){
             })
         })
     });
-    $('#branches__label').text($('.slick-active').text());
+    $('.branches__carousel').on('afterChange', function() {  
+        var dataId = $('.slick-list').find('.slick-active').find('.branches__title__container').data('title');
+        $('.branches__label').text(dataId);
+    });
 });
